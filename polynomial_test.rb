@@ -28,7 +28,7 @@ class PolynomialTest < Minitest::Test
   end
  
   def test_error
-    e = assert_raise(ArgumentError) { Polynomial.new([1]) }
+    e = assert_raises(ArgumentError) { Polynomial.new([1]) }
     assert_match(/Need at least 2 coefficients/, e.message)
   end
 end
